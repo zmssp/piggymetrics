@@ -43,6 +43,10 @@ PUT	| /statistics/{account}	| Create or update time series datapoint for specifi
 
 
 #### Notification service
+> NOTE:
+>
+> Notification service requires more configuration and doesn't work out of the box when deployed to Azure Spring Cloud. More instructions are on the way.
+
 Stores users contact information and notification settings (like remind and backup frequency). Scheduled worker collects required information from other services and sends e-mail messages to subscribed customers.
 
 Method	| Path	| Description	| User authenticated	| Available from UI
